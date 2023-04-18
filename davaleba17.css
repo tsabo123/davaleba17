@@ -22,21 +22,26 @@ body{
     background: #FFFFFF;
 }
 .desktop {
- max-width: 100%;
- display: flex;
+ 
+ 
 
 
 }
-
-.header > img {
- margin-left: 648px;
+.header{
+    display: flex;
+    margin-inline: auto;
+  
 }
+.logo {
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 48px;
+}
+
 .navcontainer {
-    margin-left: 350px;
-    
-    position: absolute;
+    display: flex;
     align-items: center;
-    margin-top: 186px;  
+    justify-content: center;
 }
 .menu {
  
@@ -56,9 +61,10 @@ body{
 
 }
 .inputcontainer{
-    position: absolute;
+   display: flex;
+   justify-content: center;
     background: black;
-    margin-top: 241px;
+    margin-top: 57px;
     height: 119px;
     width: 100%;
 }
@@ -72,18 +78,85 @@ input {
     background: #FFFFFF;
     border-radius: 10px;
     margin-top: 27px;
+    
+}
+.select {
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
 
+
+color: rgba(0, 0, 0, 0.5);
+
+mix-blend-mode: normal;
+}
+.selection {
+    box-sizing: border-box;   
+    width: 190px;
+    height: 60px;
+    margin-block-start: 200px;
+    padding-left: 13px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 27px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  
+  
+  color: rgba(0, 0, 0, 0.5);
+  
+  mix-blend-mode: normal;
+}
+.option {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    
+    color: rgba(0, 0, 0, 0.5);
+    
+    mix-blend-mode: normal;
 }
 .vector {
    position: absolute;
    margin-top: 50px;
    margin-left: -35px;
 }
-.date {
-    position: absolute;
-    margin-left: -35px;
-    margin-top: 50px;
+input[type="date"]{
+    padding-right:12px;
+     
+    font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+
+color: rgba(0, 0, 0, 0.5);
+
+mix-blend-mode: normal;
+    
 }
+    
+
+    
+
+
 .button {
     border: none ;
     padding: 18px;
@@ -115,22 +188,25 @@ line-height: 23px;
 cursor: pointer;
 color: #FFFFFF;
 }
-form {
-    margin-left: 318px;
-}
+
 .mainphoto {
-    position: absolute;
-    margin-top: 358px;
-    margin-left: 0px;
     width: 100%;
+    background: url(hDbCjHNdF48.png)
+    
+}
+.bannerphoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.one {
+position: absolute;
+padding-top: 320px;
 
 }
-.text {
-    position: absolute;
-    margin-top: 681px;
-    margin-left: 230px;
-}
-.text > h1 {
+.one > h1 {
 font-family:'Segoe_UI';
 font-style: normal;
 font-weight: 700;
@@ -139,7 +215,7 @@ line-height: 106px;
 color: #FFFFFF;
 mix-blend-mode: normal;
 }
-.text > h5 {
+.one > h5 {
 font-family:'Ubuntu-Medium';
 font-style: normal;
 font-weight: 500;
@@ -149,8 +225,8 @@ text-align: center;
 color: #FFFFFF;
 mix-blend-mode: normal;
 }
-.text > button {
-position: absolute;
+.one > button {
+
 border: none ;
 width: 371px;
 height: 76px;
@@ -168,59 +244,57 @@ color: #FFFFFF;
 mix-blend-mode: normal;
 }
 .flexbox {
-    width: 1300px;
-    height: 289px;
+    width: 90%;
+   
     background: #FFFFFF;
     display: flex;
-    margin-top: 970px;
+    height: 289px;
+   margin-left: 61px;
+   justify-content: center;
    position: absolute;
-    margin-left: 61px;
-  
-    
-    
+   margin-top: -150px;
+   
 }
-.flexbox > h2 {
-    justify-content: flex-start;
+.textbox {
+    display: flex;
+    justify-content: center;
+    position: absolute;
     font-family:'Ubuntu-Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
-    line-height: 52px;
+    line-height: 45px;
 /* identical to box height */
-    margin-top: 42px;
-    margin-left: 567px;
-
+    margin-top: 30px;
+   
+    
+  
     color: #957554;
 
      mix-blend-mode: normal;
 }
-.flexbox > img {
-    margin-top: 145px;
-    
-}
+
 .smallicons {
     
     display: flex;
-    flex-direction: row;
-    margin-top: 77.62px;
-    justify-content: center;
-    position: absolute;
-
+    margin-inline: auto;
+    position: relative;
+    margin-top: 76px;
 }
 .icons {
-    
-    padding-left: 130px;
+    margin-top: 30px;
+    padding-left: 170px;
+    margin-inline: auto;
 }
 .texticons {
     display: flex;
-    flex-direction: row;
     position: absolute;
-    margin-top: 1204px;
-    margin-left: 45px;
+    margin-top: 215px;
+    margin-inline: auto;
     
 }
 .text3 {
-    padding-left: 195px;
+    padding-left: 180px;
     font-family:'Ubuntu-Regular';
     font-style: normal;
     font-weight: 400;
@@ -234,17 +308,20 @@ mix-blend-mode: normal;
     mix-blend-mode: normal;
 }
 .section {
-    width: 1441px;
+    width: 100%;
     margin-top: 52px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    row-gap: 60px;
+    position: relative;
 }
 
 .sectext {
-    margin-top: 1199px;
-    margin-left: 564px;
+    margin-top: 156px;
+    display: flex;
+    justify-content: center;
     font-family:'Ubuntu-Medium';
     font-style: normal;
     font-weight: 500;
@@ -253,14 +330,36 @@ mix-blend-mode: normal;
     color: #957554;
     mix-blend-mode: normal;
 }
-.small1 {
-    margin-top: -200px;
-    margin-left: 192px;
-    position: absolute;
+.photo {
+    display: flex;
+    
+    align-items: center;
+    position: relative;
 
+    
+    
+    
+   
+}
+.small1 {
+    position: absolute;
+    display: flex;
+    top: 301px;
+    left: 130px;
+    
+}
+.small2 {
+    position: absolute;
+    display: flex;
+    top: 301px;
+    left: 130px;
+    
+    
 }
 .small1 > h3 {
-    
+    position: absolute;
+    width: 388px;
+    height: 46px;
     font-family:'Ubuntu-Medium';
     font-style: normal;
     font-weight: 500;
@@ -268,53 +367,74 @@ mix-blend-mode: normal;
     line-height: 46px;
     color: #FFFFFF;
     mix-blend-mode: normal;
+   
+}
+.small2 > h3 {
+    position: absolute;
+    width: 388px;
+    height: 46px;
+    font-family:'Ubuntu-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-inline: 63px;
 }
 .small1 > button {
+    
+   margin-inline: 80px;
+    position: absolute;
     width: 244px;
     height: 76px;
     text-align: center;
     background: #DFAA5B;
     border: none ;
     border-radius: 10px;
-    margin-left: 50px;
-    margin-top: 19px;
+    top:60px;
     font-family:'Ubuntu-Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     
-    text-align: center;
+    
     color: #FFFFFF;
     mix-blend-mode: normal;
 }
-.small1> .button2 {
+
+.small2 > .button2 {
+    
+   
+    position: absolute;
     width: 244px;
     height: 76px;
     text-align: center;
     background: #DFAA5B;
     border: none ;
     border-radius: 10px;
-    margin-left: 5px;
-    margin-top: 19px;
+    top:60px;
     font-family:'Ubuntu-Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
+    margin-inline: 80px;
+    
     color: #FFFFFF;
-    mix-blend-mode: normal
+    mix-blend-mode: normal;
 }
+
 .lastcont {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-inline: center;
-    
-    width: 1319px;
+    margin-inline: auto;
+    align-items: center;
+    width: 100%;
     height: 277px;
-    margin-left: 61px;
+    
     margin-top: 53px;
     font-family:'Ubuntu-Medium';
     font-style: normal;
@@ -327,7 +447,7 @@ mix-blend-mode: normal;
 .lastcont >.button1 {
     background: #DFAA5B;
 border-radius: 10px;
-margin-left: 451px;
+
 margin-top: 62px;
 width: 418px;
 height: 76px;
@@ -336,7 +456,7 @@ border: none ;
 }
 .lastcont > h3 {
     margin-top: 61px;
-    margin-left: 451px;
+    
     font-family:'Ubuntu-Medium';
 font-style: normal;
 font-weight: 500;
@@ -352,21 +472,17 @@ mix-blend-mode: normal;
 .footer {
     flex-direction: row;
    
-    
+    gap: 200px;
     display: flex;
     margin-top: 62px;
     width: 100%;
 height: 469px;
-left: 1px;
 
 
 background: #111111;
 }
 
-img {
-    margin-top: 61px;
-    margin-left: 55px;
-}
+
 .contacts {
     display: flex;
     flex-direction:column;
@@ -387,7 +503,7 @@ img {
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
-    margin-left: 232px;
+    
     margin-top: 61px;
     
 
@@ -409,10 +525,10 @@ a {
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
-    margin-left: 251px;
+
     margin-top: 61px;
 }
-.inbuttom1 {
+.inbutton1 {
 width: 371px;
 height: 75px;
 cursor: pointer;
@@ -433,13 +549,14 @@ color: rgba(0, 0, 0, 0.5);
 mix-blend-mode: normal;
 }
 
-.inbuttom2 {
+.inbutton2 {
     width: 371px;
     height: 75px;
     border: none ;
     cursor: pointer;
     background: #DFAA5B;
     border-radius: 10px;
+    margin-top: 24px;
     
     font-family: 'Ubuntu-Light';
     font-style: normal;
@@ -452,4 +569,8 @@ mix-blend-mode: normal;
     color: rgba(0, 0, 0, 0.5);
     
     mix-blend-mode: normal;
+    }
+    .box1> img {
+        margin-top: 51px;
+        margin-left: 61px;
     }
