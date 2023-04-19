@@ -259,42 +259,46 @@ mix-blend-mode: normal;
     display: flex;
     justify-content: center;
     position: absolute;
-    font-family:'Ubuntu-Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 45px;
+    font-family:'Ubuntu-Regular';
+    margin-top: 42px;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 52px;
 /* identical to box height */
-    margin-top: 30px;
-   
-    
-  
-    color: #957554;
 
-     mix-blend-mode: normal;
+
+color: #957554;
+
+mix-blend-mode: normal;
 }
 
 .smallicons {
     
     display: flex;
-    margin-inline: auto;
-    position: relative;
+    
+    column-gap: 160px;
+    
     margin-top: 76px;
 }
 .icons {
-    margin-top: 30px;
-    padding-left: 170px;
-    margin-inline: auto;
+    margin-top: 53px;
+    display: flex;
+    
+   
+    column-gap: 175px;
+   
 }
 .texticons {
     display: flex;
+    justify-content: space-evenly;
     position: absolute;
     margin-top: 215px;
-    margin-inline: auto;
-    
+    column-gap: 167px;
 }
 .text3 {
-    padding-left: 180px;
+    
+    
     font-family:'Ubuntu-Regular';
     font-style: normal;
     font-weight: 400;
@@ -531,7 +535,7 @@ a {
 .inbutton1 {
 width: 371px;
 height: 75px;
-cursor: pointer;
+
 padding-left: 27px;
 background: #FFFFFF;
 border-radius: 10px;
